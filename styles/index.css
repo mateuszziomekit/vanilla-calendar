@@ -28,17 +28,19 @@ body {
 
   --duration-sm: 100ms;
 
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+
   --color-gray-100: #f3f4f6;
   --color-gray-300: #d1d5db;
 
   --color-white: #ffffff;
 
+  --color-text-light: #f9fafb;
   --color-text-dark: #030712;
 }
 
 .app {
-  display: grid;
-  grid-template-columns: auto 1fr;
   height: 100vh;
 }
 
@@ -50,4 +52,11 @@ body {
 
 .calendar {
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }

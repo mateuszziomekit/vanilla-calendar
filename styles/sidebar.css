@@ -1,4 +1,15 @@
 .sidebar {
   border-right: 1px solid var(--color-gray-300);
   width: 17rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
 }

@@ -20,6 +20,20 @@
   background-color: var(--color-gray-100);
 }
 
+.button--primary {
+  background-color: var(--color-blue-600);
+  color: var(--color-text-light);
+}
+
+.button--primary:hover {
+  background-color: var(--color-blue-500);
+}
+
+.button--lg {
+  font-weight: 500;
+  height: 2.5rem;
+}
+
 .button--icon {
   display: flex;
   align-items: center;
