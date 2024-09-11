@@ -46,6 +46,15 @@ function initEvent(event) {
   eventStartTimeElement.textContent = dateFormatter.format(startDate);
   eventEndTimeElement.textContent = dateFormatter.format(endDate);
 
+  eventElement.addEventListener("click", () => {
+    eventElement.dispatchEvent(new CustomEvent("event-click", {
+      detail: {
+        event,
+      },
+      bubbles: true
+    }));
+  });
+
   return eventElement;
 }
 

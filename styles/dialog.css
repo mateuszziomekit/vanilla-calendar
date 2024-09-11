@@ -51,6 +51,18 @@
   padding: 0 1.5rem;
 }
 
+.dialog__header-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.dialog__header-actions-divider {
+  flex-shrink: 0;
+  width: 1px;
+  background-color: var(--color-gray-100);
+}
+
 .dialog__title {
   font-size: var(--font-size-2xl);
   line-height: var(--line-height-2xl);

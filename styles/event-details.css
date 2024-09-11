@@ -1,0 +1,28 @@
+.event-details {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.event-details__line {
+  flex-shrink: 0;
+  width: 0.5rem;
+  background-color: var(--event-color);
+  border-radius: var(--border-radius-md);
+}
+
+.event-details__content {
+  display: flex;
+  flex-direction: column;
+  grid-area: 0.5rem;
+}
+
+.event-details__title {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
+.event-details__time {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
