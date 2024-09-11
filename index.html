@@ -25,6 +25,44 @@
       </div>
 
       <button class="button button--primary button--lg" data-event-create-button>Create event</button>
+
+      <div class="mini-calendar" data-mini-calendar>
+        <div class="mini-calendar__header">
+          <time class="mini-calendar__date" data-mini-calendar-date></time>
+
+          <div class="mini-calendar__controls">
+            <button class="button button--icon button--secondary button--sm" data-mini-calendar-previous-button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="button__icon">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+
+            <button class="button button--icon button--secondary button--sm" data-mini-calendar-next-button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="button__icon">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="mini-calendar__content">
+          <ul class="mini-calendar__day-of-week-list">
+            <li class="mini-calendar__day-of-week">S</li>
+            <li class="mini-calendar__day-of-week">M</li>
+            <li class="mini-calendar__day-of-week">T</li>
+            <li class="mini-calendar__day-of-week">W</li>
+            <li class="mini-calendar__day-of-week">T</li>
+            <li class="mini-calendar__day-of-week">F</li>
+            <li class="mini-calendar__day-of-week">S</li>
+          </ul>
+
+          <ul class="mini-calendar__day-list" data-mini-calendar-day-list></ul>
+        </div>
+      </div>
     </div>
     <main class="main">
       <div class="nav">
@@ -557,6 +595,12 @@
         <time data-event-start-time></time> - <time data-event-end-time></time>
       </span>
     </button>
+  </template>
+
+  <template data-template="mini-calendar-day-list-item">
+    <li class="mini-calendar__day-list-item" data-mini-calendar-day-list-item>
+      <button class="mini-calendar__day button button--sm" data-mini-calendar-day></button>
+    </li>
   </template>
 </body>
 

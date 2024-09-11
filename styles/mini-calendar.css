@@ -1,0 +1,65 @@
+.mini-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mini-calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-calendar__date {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.mini-calendar__controls {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.mini-calendar__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mini-calendar__day-of-week-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.mini-calendar__day-of-week {
+  text-align: center;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  font-weight: 500;
+}
+
+.mini-calendar__day-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.mini-calendar__day-list-item {
+  text-align: center;
+}
+
+.mini-calendar__day {
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.mini-calendar__day--other {
+  color: var(--color-gray-500);
+}
+
+.mini-calendar__day--highlight {
+  border-color: var(--color-blue-600);
+}

@@ -43,6 +43,13 @@
   height: 2.5rem;
 }
 
+.button--sm {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  height: 1.75rem;
+  padding: 0 0.5rem;
+}
+
 .button--icon {
   display: flex;
   align-items: center;
@@ -52,6 +59,14 @@
   border: none;
 }
 
+.button--icon.button--sm {
+  width: 1.75rem;
+}
+
 .button__icon {
   width: 1rem;
+}
+
+.button--sm .button__icon {
+  width: 0.75rem;
 }
