@@ -1,0 +1,37 @@
+@import "./nav.css";
+@import "./sidebar.css";
+
+* {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
+:root {
+  --color-gray-300: #d1d5db;
+
+  --color-text-dark: #030712;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.calendar {
+  height: 100%;
+}
