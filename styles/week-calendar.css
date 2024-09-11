@@ -37,6 +37,10 @@
   background-color: var(--color-gray-100);
 }
 
+.week-calendar__day-of-week-button--highlight {
+  border-color: var(--color-blue-600);
+}
+
 .week-calendar__day-of-week-day {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
