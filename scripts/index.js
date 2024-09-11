@@ -12,6 +12,7 @@ import { initNotifications } from "./notifications.js";
 import { initViewSelect } from "./view-select.js";
 import { initResponsive } from "./responsive.js";
 import { initUrl } from "./url.js";
+import { initSync } from "./sync.js";
 
 const eventStore = initEventStore();
 initCalendar(eventStore);
@@ -27,3 +28,4 @@ initNotifications();
 initViewSelect();
 initUrl();
 initResponsive();
+initSync();
