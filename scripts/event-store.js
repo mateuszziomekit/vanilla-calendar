@@ -24,6 +24,18 @@ export function initEventStore() {
     }));
   });
 
+  document.addEventListener("event-edit", (event) => {
+    const editedEvent = event.detail.event;
+    const events = getEventsFromLocalStorage().map((event) => {
+      return event.id === editedEvent.id ? editedEvent : event;
+    });
+    saveEventsIntoLocalStorage(events);
+
+    document.dispatchEvent(new CustomEvent("events-change", {
+      bubbles: true
+    }));
+  });
+
   return {
     getEventsByDate(date) {
       const events = getEventsFromLocalStorage();

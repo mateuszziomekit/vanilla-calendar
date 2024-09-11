@@ -100,7 +100,7 @@
     <form class="form" data-event-form>
       <div class="dialog__wrapper">
         <div class="dialog__header">
-          <h2 class="dialog__title">Create event</h2>
+          <h2 class="dialog__title" data-dialog-title></h2>
           <button class="button button--icon button--secondary" type="button" data-dialog-close-button>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -113,6 +113,8 @@
 
         <div class="dialog__content">
           <div class="form__fields">
+            <input type="hidden" id="id" name="id" />
+
             <div class="form__field">
               <label class="form__label" for="title">Title</label>
               <input class="input input--fill" id="title" name="title" type="text" placeholder="My awesome event!"

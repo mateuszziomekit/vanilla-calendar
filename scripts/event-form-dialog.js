@@ -7,12 +7,21 @@ export function initEventFormDialog() {
   const toaster = initToaster(dialog.dialogElement);
   const eventForm = initEventForm(toaster);
 
+  const dialogTitleElement = dialog.dialogElement.querySelector("[data-dialog-title]");
+
   document.addEventListener("event-create-request", (event) => {
-    eventForm.fillWithDate(
+    dialogTitleElement.textContent = "Create event";
+    eventForm.switchToCreateMode(
       event.detail.date,
       event.detail.startTime,
       event.detail.endTime
     );
+    dialog.open();
+  });
+
+  document.addEventListener("event-edit-request", (event) => {
+    dialogTitleElement.textContent = "Edit event";
+    eventForm.switchToEditMode(event.detail.event);
     dialog.open();
   });
 
@@ -21,6 +30,10 @@ export function initEventFormDialog() {
   });
 
   eventForm.formElement.addEventListener("event-create", () => {
+    dialog.close();
+  });
+
+  eventForm.formElement.addEventListener("event-edit", () => {
     dialog.close();
   });
 }

@@ -10,4 +10,8 @@ export function initNotifications() {
   document.addEventListener("event-delete", () => {
     toaster.success("Event has been deleted");
   });
+
+  document.addEventListener("event-edit", () => {
+    toaster.success("Event has been edited");
+  });
 }
