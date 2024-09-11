@@ -52,6 +52,10 @@
   border-bottom: 1px solid var(--color-gray-300);
 }
 
+.month-calendar__day--highlight {
+  background-color: var(--color-blue-50);
+}
+
 .month-calendar__day:nth-child(7n) {
   border-right: 0;
 }
