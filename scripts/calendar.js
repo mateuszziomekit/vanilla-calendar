@@ -1,13 +1,13 @@
-import { today } from "./date.js";
 import { initMonthCalendar } from "./month-calendar.js";
 import { initWeekCalendar } from "./week-calendar.js";
 import { currentDeviceType } from "./responsive.js";
+import { getUrlDate, getUrlView } from "./url.js";
 
 export function initCalendar(eventStore) {
   const calendarElement = document.querySelector("[data-calendar]");
 
-  let selectedView = "month";
-  let selectedDate = today();
+  let selectedView = getUrlView();
+  let selectedDate = getUrlDate();
   let deviceType = currentDeviceType();
 
   function refreshCalendar() {

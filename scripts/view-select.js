@@ -1,5 +1,8 @@
+import { getUrlView } from "./url.js";
+
 export function initViewSelect() {
   const viewSelectElement = document.querySelector("[data-view-select]");
+  viewSelectElement.value = getUrlView();
 
   viewSelectElement.addEventListener("change", (event) => {
     viewSelectElement.dispatchEvent(new CustomEvent("view-change", {

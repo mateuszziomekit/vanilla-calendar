@@ -1,4 +1,4 @@
-import { today } from "./date.js";
+import { getUrlDate } from "./url.js";
 
 export function initEventCreateButtons() {
   const buttonElements = document.querySelectorAll("[data-event-create-button]");
@@ -9,7 +9,7 @@ export function initEventCreateButtons() {
 }
 
 function initEventCreateButton(buttonElement) {
-  let selectedDate = today();
+  let selectedDate = getUrlDate();
 
   buttonElement.addEventListener("click", () => {
     buttonElement.dispatchEvent(new CustomEvent("event-create-request", {

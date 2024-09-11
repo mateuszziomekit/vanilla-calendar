@@ -11,6 +11,7 @@ import { initNav } from "./nav.js";
 import { initNotifications } from "./notifications.js";
 import { initViewSelect } from "./view-select.js";
 import { initResponsive } from "./responsive.js";
+import { initUrl } from "./url.js";
 
 const eventStore = initEventStore();
 initCalendar(eventStore);
@@ -24,4 +25,5 @@ initMobileSidebar();
 initNav();
 initNotifications();
 initViewSelect();
+initUrl();
 initResponsive();

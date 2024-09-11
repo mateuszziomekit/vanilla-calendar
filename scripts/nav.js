@@ -1,4 +1,5 @@
 import { today, addDays, addMonths, subtractDays, subtractMonths } from "./date.js";
+import { getUrlDate, getUrlView } from "./url.js";
 
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
   month: "long",
@@ -11,8 +12,8 @@ export function initNav() {
   const nextButtonElement = document.querySelector("[data-nav-next-button]");
   const dateElement = document.querySelector("[data-nav-date]");
 
-  let selectedView = "month";
-  let selectedDate = today();
+  let selectedView = getUrlView();
+  let selectedDate = getUrlDate();
 
   for (const todayButtonElement of todayButtonElements) {
     todayButtonElement.addEventListener("click", () => {
