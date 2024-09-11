@@ -1,0 +1,25 @@
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__split {
+  display: flex;
+  gap: 1rem;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__split .form__field {
+  flex: 1;
+}
+
+.form__label {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}

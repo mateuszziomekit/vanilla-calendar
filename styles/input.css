@@ -1,0 +1,13 @@
+.input {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  background-color: transparent;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-gray-300);
+  padding: 0 0.75rem;
+  height: 2.125rem;
+}
+
+.input--fill {
+  width: 100%;
+}

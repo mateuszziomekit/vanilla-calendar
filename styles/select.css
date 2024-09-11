@@ -3,6 +3,10 @@
   color: var(--color-text-dark);
 }
 
+.select--fill {
+  width: 100%;
+}
+
 .select__select {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
@@ -15,6 +19,10 @@
   height: 2.125rem;
   cursor: pointer;
   appearance: none;
+}
+
+.select--fill .select__select {
+  width: 100%;
 }
 
 .select__icon {
