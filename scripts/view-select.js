@@ -9,4 +9,8 @@ export function initViewSelect() {
       bubbles: true
     }));
   });
+
+  document.addEventListener("view-change", (event) => {
+    viewSelectElement.value = event.detail.view;
+  });
 }

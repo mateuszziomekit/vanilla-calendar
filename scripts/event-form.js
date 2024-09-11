@@ -22,10 +22,23 @@ export function initEventForm(toaster) {
 
   return {
     formElement,
+    fillWithDate(date, startTime, endTime) {
+      fillFormWithDate(formElement, date, startTime, endTime);
+    },
     reset() {
       formElement.reset();
     }
   };
+}
+
+function fillFormWithDate(formElement, date, startTime, endTime) {
+  const dateInputElement = formElement.querySelector("#date");
+  const startTimeSelectElement = formElement.querySelector("#start-time");
+  const endTimeSelectElement = formElement.querySelector("#end-time");
+
+  dateInputElement.value = date.toISOString().substr(0, 10);
+  startTimeSelectElement.value = startTime;
+  endTimeSelectElement.value = endTime;
 }
 
 function formIntoEvent(formElement) {

@@ -7,7 +7,12 @@ export function initEventFormDialog() {
   const toaster = initToaster(dialog.dialogElement);
   const eventForm = initEventForm(toaster);
 
-  document.addEventListener("event-create-request", () => {
+  document.addEventListener("event-create-request", (event) => {
+    eventForm.fillWithDate(
+      event.detail.date,
+      event.detail.startTime,
+      event.detail.endTime
+    );
     dialog.open();
   });
 

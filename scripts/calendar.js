@@ -9,6 +9,10 @@ export function initCalendar(eventStore) {
   let selectedDate = today();
 
   function refreshCalendar() {
+    const calendarScrollableElement = calendarElement.querySelector("[data-calendar-scrollable]");
+
+    const scrollTop = calendarScrollableElement === null ? 0 : calendarScrollableElement.scrollTop;
+
     calendarElement.replaceChildren();
 
     if (selectedView === "month") {
@@ -18,6 +22,8 @@ export function initCalendar(eventStore) {
     } else {
       initWeekCalendar(calendarElement, selectedDate, eventStore, true);
     }
+
+    calendarElement.querySelector("[data-calendar-scrollable]").scrollTo({ top: scrollTop });
   }
 
   document.addEventListener("view-change", (event) => {

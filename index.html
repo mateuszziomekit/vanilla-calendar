@@ -311,7 +311,7 @@
       </ul>
 
       <div class="month-calendar__day-list-wrapper">
-        <ul class="month-calendar__day-list" data-month-calendar-day-list>
+        <ul class="month-calendar__day-list" data-month-calendar-day-list data-calendar-scrollable>
         </ul>
       </div>
     </div>
@@ -320,7 +320,7 @@
   <template data-template="month-calendar-day">
     <li class="month-calendar__day" data-month-calendar-day>
       <button class="month-calendar__day-label" data-month-calendar-day-label></button>
-      <div class="month-calendar__event-list-wrapper" data-month-calendar-list-wrapper>
+      <div class="month-calendar__event-list-wrapper" data-month-calendar-event-list-wrapper>
         <ul class="event-list" data-event-list></ul>
       </div>
     </li>
@@ -335,7 +335,7 @@
       </ul>
 
       <div class="week-calendar__content">
-        <div class="week-calendar__content-inner">
+        <div class="week-calendar__content-inner" data-calendar-scrollable>
           <ul class="week-calendar__time-list">
             <li class="week-calendar__time-item">
               <time class="week-calendar__time">12:00 AM</time>
@@ -435,30 +435,30 @@
 
   <template data-template="week-calendar-column">
     <div class="week-calendar__column" data-week-calendar-column>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
-      <div class="week-calendar__cell"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="0"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="60"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="120"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="180"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="240"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="300"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="360"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="420"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="480"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="540"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="600"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="660"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="720"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="780"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="840"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="900"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="960"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="1020"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="1080"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="1140"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="1200"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="1260"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="1320"></div>
+      <div class="week-calendar__cell" data-week-calendar-cell="1380"></div>
     </div>
   </template>
 
