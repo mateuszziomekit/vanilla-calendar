@@ -1,0 +1,34 @@
+.event {
+  width: 100%;
+  display: block;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  color: var(--color-text-dark);
+  text-align: left;
+  background-color: transparent;
+  border-radius: var(--border-radius-md);
+  border: 0;
+  padding: 0.125rem 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.event--filled {
+  background-color: var(--color-blue-600);
+  color: var(--color-text-light);
+}
+
+.event__color {
+  display: inline-block;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-blue-600);
+  margin-right: 0.25rem;
+}
+
+.event--filled .event__color {
+  display: none;
+}

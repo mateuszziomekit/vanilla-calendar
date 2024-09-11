@@ -1,0 +1,10 @@
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  list-style: none;
+}
+
+.event-list__item {
+  display: flex;
+}
