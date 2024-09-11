@@ -11,6 +11,10 @@
   padding: 0.5rem 0.5rem 0 4.5rem;
 }
 
+.week-calendar--day .week-calendar__day-of-week-list {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .week-calendar__day-of-week {
   display: flex;
   justify-content: center;
@@ -53,6 +57,10 @@
   grid-template-columns: repeat(7, minmax(0, 1fr));
   padding: 0.5rem;
   padding-left: 4.5rem;
+}
+
+.week-calendar--day .week-calendar__all-day-list {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .week-calendar__all-day-list::after {
@@ -104,6 +112,10 @@
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   padding-top: 0.75rem;
+}
+
+.week-calendar--day .week-calendar__columns {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .week-calendar__column {
