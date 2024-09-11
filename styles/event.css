@@ -16,7 +16,7 @@
 }
 
 .event--filled {
-  background-color: var(--color-blue-600);
+  background-color: var(--event-color);
   color: var(--color-text-light);
 }
 
@@ -40,7 +40,7 @@
   border-radius: 50%;
   width: 0.5rem;
   height: 0.5rem;
-  background-color: var(--color-blue-600);
+  background-color: var(--event-color);
   margin-right: 0.25rem;
 }
 
