@@ -39,8 +39,8 @@
 
         <div class="nav__date-info">
           <div class="nav__controls">
-            <button class="button button--secondary desktop-only">Today</button>
-            <button class="button button--icon button--secondary mobile-only">
+            <button class="button button--secondary desktop-only" data-nav-today-button>Today</button>
+            <button class="button button--icon button--secondary mobile-only" data-nav-today-button>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="button__icon">
@@ -58,7 +58,7 @@
             </button>
 
             <div class="nav__arrows">
-              <button class="button button--icon button--secondary">
+              <button class="button button--icon button--secondary" data-nav-previous-button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="button__icon">
@@ -66,7 +66,7 @@
                 </svg>
               </button>
 
-              <button class="button button--icon button--secondary">
+              <button class="button button--icon button--secondary" data-nav-next-button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="button__icon">
@@ -75,7 +75,7 @@
               </button>
             </div>
           </div>
-          <time class="nav__date">July 2024</time>
+          <time class="nav__date" data-nav-date></time>
         </div>
 
         <div class="select desktop-only">
