@@ -66,7 +66,7 @@
     </div>
     <main class="main">
       <div class="nav">
-        <button class="button button--icon button--secondary mobile-only">
+        <button class="button button--icon button--secondary mobile-only" data-hamburger-button>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="button__icon">
             <line x1="4" x2="20" y1="12" y2="12" />
@@ -133,6 +133,14 @@
       </div>
     </main>
   </div>
+
+  <button class="fab mobile-only" data-event-create-button>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fab__icon">
+      <path d="M5 12h14" />
+      <path d="M12 5v14" />
+    </svg>
+  </button>
 
   <dialog class="dialog" data-dialog="event-form">
     <form class="form" data-event-form>
@@ -413,6 +421,50 @@
         <div class="dialog__actions">
           <button class="button button--secondary" data-dialog-close-button>Cancel</button>
           <button class="button button--danger" data-event-delete-button>Delete</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="dialog dialog--sidebar" data-dialog="mobile-sidebar">
+    <div class="dialog__wrapper">
+      <div class="dialog__content">
+        <div class="mini-calendar" data-mini-calendar>
+          <div class="mini-calendar__header">
+            <time class="mini-calendar__date" data-mini-calendar-date></time>
+
+            <div class="mini-calendar__controls">
+              <button class="button button--icon button--secondary button--sm" data-mini-calendar-previous-button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="button__icon">
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </button>
+
+              <button class="button button--icon button--secondary button--sm" data-mini-calendar-next-button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="button__icon">
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="mini-calendar__content">
+            <ul class="mini-calendar__day-of-week-list">
+              <li class="mini-calendar__day-of-week">S</li>
+              <li class="mini-calendar__day-of-week">M</li>
+              <li class="mini-calendar__day-of-week">T</li>
+              <li class="mini-calendar__day-of-week">W</li>
+              <li class="mini-calendar__day-of-week">T</li>
+              <li class="mini-calendar__day-of-week">F</li>
+              <li class="mini-calendar__day-of-week">S</li>
+            </ul>
+
+            <ul class="mini-calendar__day-list" data-mini-calendar-day-list></ul>
+          </div>
         </div>
       </div>
     </div>

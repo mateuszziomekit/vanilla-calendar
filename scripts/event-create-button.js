@@ -1,8 +1,14 @@
 import { today } from "./date.js";
 
-export function initEventCreateButton() {
-  const buttonElement = document.querySelector("[data-event-create-button]");
+export function initEventCreateButtons() {
+  const buttonElements = document.querySelectorAll("[data-event-create-button]");
 
+  for (const buttonElement of buttonElements) {
+    initEventCreateButton(buttonElement);
+  }
+}
+
+function initEventCreateButton(buttonElement) {
   let selectedDate = today();
 
   buttonElement.addEventListener("click", () => {

@@ -1,0 +1,13 @@
+.fab {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--color-blue-600);
+  color: var(--color-text-light);
+  cursor: pointer;
+  box-shadow: var(--box-shadow-lg);
+  border: 0.125rem solid var(--color-white);
+}
