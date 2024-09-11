@@ -29,6 +29,15 @@
   background-color: var(--color-blue-500);
 }
 
+.button--danger {
+  background-color: var(--color-red-600);
+  color: var(--color-text-light);
+}
+
+.button--danger:hover {
+  background-color: var(--color-red-500);
+}
+
 .button--lg {
   font-weight: 500;
   height: 2.5rem;

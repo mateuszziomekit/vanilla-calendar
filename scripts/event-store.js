@@ -12,6 +12,18 @@ export function initEventStore() {
     }));
   });
 
+  document.addEventListener("event-delete", (event) => {
+    const deletedEvent = event.detail.event;
+    const events = getEventsFromLocalStorage().filter((event) => {
+      return event.id !== deletedEvent.id;
+    })
+    saveEventsIntoLocalStorage(events);
+
+    document.dispatchEvent(new CustomEvent("events-change", {
+      bubbles: true
+    }));
+  });
+
   return {
     getEventsByDate(date) {
       const events = getEventsFromLocalStorage();

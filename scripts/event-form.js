@@ -1,4 +1,4 @@
-import { validateEvent } from "./event.js";
+import { validateEvent, generateEventId } from "./event.js";
 
 export function initEventForm(toaster) {
   const formElement = document.querySelector("[data-event-form]");
@@ -50,6 +50,7 @@ function formIntoEvent(formElement) {
   const color = formData.get("color");
 
   const event = {
+    id: generateEventId(),
     title,
     date: new Date(date),
     startTime: Number.parseInt(startTime, 10),

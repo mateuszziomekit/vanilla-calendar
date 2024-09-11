@@ -6,4 +6,8 @@ export function initNotifications() {
   document.addEventListener("event-create", () => {
     toaster.success("Event has been created");
   });
+
+  document.addEventListener("event-delete", () => {
+    toaster.success("Event has been deleted");
+  });
 }
