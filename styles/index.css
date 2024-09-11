@@ -5,6 +5,7 @@
 @import "./month-calendar.css";
 @import "./select.css";
 @import "./sidebar.css";
+@import "./week-calendar.css";
 @import "./responsive.css";
 
 * {
@@ -40,11 +41,14 @@ body {
 
   --color-gray-100: #f3f4f6;
   --color-gray-300: #d1d5db;
+  --color-gray-500: #6b7280;
 
   --color-white: #ffffff;
 
   --color-text-light: #f9fafb;
   --color-text-dark: #030712;
+
+  --box-shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 .app {
