@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/index.css" />
+  <script src="/scripts/index.js" type="module"></script>
   <title>Vanilla Calendar</title>
 </head>
 
@@ -78,7 +79,7 @@
         </div>
 
         <div class="select desktop-only">
-          <select class="select__select">
+          <select class="select__select" data-view-select>
             <option value="day">Day</option>
             <option value="week">Week</option>
             <option value="month" selected>Month</option>
@@ -91,7 +92,7 @@
         </div>
       </div>
       <div class="calendar">
-        <div class="month-calendar month-calendar--five-week">
+        <div class="month-calendar month-calendar--five-week" data-month-calendar>
           <ul class="month-calendar__day-of-week-list">
             <li class="month-calendar__day-of-week">Sun</li>
             <li class="month-calendar__day-of-week">Mon</li>
