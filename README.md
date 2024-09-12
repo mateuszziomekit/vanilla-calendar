@@ -25,5 +25,6 @@ Features:
 - 📑 Mobile-friendly sidebar
 - 🔗 URL state persistence
 - 🌐 Real-time updates across multiple tabs
+- 🚀 Put the website live on the internet
 
 Enjoy the tutorial, and don’t forget to like, share, and subscribe if you find it helpful!
