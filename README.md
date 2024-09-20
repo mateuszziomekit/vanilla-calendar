@@ -2,7 +2,7 @@
 
 Hey there! In this video, we’ll create a fully responsive calendar app using just HTML, CSS, and JavaScript. Follow along to learn how to build an interactive calendar with features like event creation, real-time updates, and more. No frameworks or libraries—everything will be built from scratch!
 
-[![Vanilla Calendar Thumbnail](https://github.com/webdevsaga/vanilla-calendar/blob/main/thumbnail.jpg)](https://youtube.com/watch?v=xJI_ZNu2cgw)
+[![Vanilla Calendar Thumbnail](https://github.com/webdevsaga/vanilla-calendar/blob/main/thumbnail.jpg)](https://www.youtube.com/watch?v=PXOsddcWL4g)
 
 - [🍿 YouTube Video](https://youtube.com/watch?v=xJI_ZNu2cgw)
 - [🚀 Live Website](https://vanilla-calendar.webdevsaga.com/)
