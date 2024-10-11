@@ -4,7 +4,7 @@ Hey there! In this video, we’ll create a fully responsive calendar app using j
 
 [![Vanilla Calendar Thumbnail](https://github.com/mateuszziomekit/vanilla-calendar/blob/main/thumbnail.jpg)](https://www.youtube.com/watch?v=PXOsddcWL4g)
 
-- [🍿 YouTube Video](https://youtube.com/watch?v=xJI_ZNu2cgw)
+- [🍿 YouTube Video](https://www.youtube.com/watch?v=PXOsddcWL4g)
 - [🚀 Live Website](https://vanilla-calendar.mateuszziomekit.com/)
 - [💻 Source Code](https://github.com/mateuszziomekit/vanilla-calendar)
 
